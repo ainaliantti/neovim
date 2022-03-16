@@ -2,37 +2,40 @@
 " * Vim source files *
 " ********************
 " Plugins
-source ~/.config/nvim/vim-plug/plugins.vim
+source ~/.config/nvim/plugin/plugins.lua
 " Mappings
-source ~/.config/nvim/keys/mappings.vim
+source ~/.config/nvim/configs/mappings.vim
 " General settings
-source ~/.config/nvim/general/settings.vim
+source ~/.config/nvim/configs/settings.vim
 " Luatree
-source ~/.config/nvim/luatree/luatree.vim
+source ~/.config/nvim/configs/luatree/luatree.vim
 " Nerdcommenter
-source ~/.config/nvim/nerdcommenter/nerdcommenter.vim
+source ~/.config/nvim/configs/nerdcommenter/nerdcommenter.vim
 " Telescope
-source ~/.config/nvim/telescope/telescope.vim
-
+source ~/.config/nvim/configs/telescope/telescope.vim
+" Syntastic, syntax checking 
+source ~/.config/nvim/configs/syntastic/syntastic.vim
+" vim-clang-format, auto formatter 
+source ~/.config/nvim/configs/vim-clang-format/cim-clang-format.vim
 " *******************
 " * Lua source files *
 " *******************
 " For LSP and CMP correct setup see the lua files below. There are some
 " instructions written inside the files
 " LSP
-luafile ~/.config/nvim/lsp/lsp.lua
+luafile ~/.config/nvim/configs/lsp/lsp.lua
 " CMP configuration
-luafile ~/.config/nvim/cmp/cmp.lua
+luafile ~/.config/nvim/configs/cmp/cmp.lua
 " Treesitter
-luafile ~/.config/nvim/treesitter/treesitter.lua
+luafile ~/.config/nvim/configs/treesitter/treesitter.lua
 " Luatree
-source ~/.config/nvim/luatree/luatree.lua
+source ~/.config/nvim/configs/luatree/luatree.lua
 " FTerm
-source ~/.config/nvim/FTerm/fterm.lua
+source ~/.config/nvim/configs/FTerm/fterm.lua
 " Telescope
-source ~/.config/nvim/telescope/telescope.lua
+source ~/.config/nvim/configs/telescope/telescope.lua
 " Lualine
-source ~/.config/nvim/lualine/lualine.lua
+source ~/.config/nvim/configs/lualine/lualine.lua
 
 " *********
 " * Other *

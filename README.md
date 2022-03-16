@@ -1,18 +1,19 @@
 # neovim
-My neovim configuration used on MacOS and Linux.
+My neovim configuration d on MacOS and Linux.
 
 The purpose of this repository is to keep my personal setup similar accross devices. Installation instructions are mostly for me personally (as a sort of memo), but they might work for others as well so added them to the readme.
 
 ## Requirements
 - [Neovim nightly](https://github.com/neovim/neovim/releases) build
-- [Vim-plug](https://github.com/junegunn/vim-plug) installed
+- [Packer](https://github.com/wbthomason/packer.nvim) installed
 - [Ripgrep](https://github.com/BurntSushi/ripgrep#installation) installed
-- [Patched font](https://github.com/ryanoasis/nerd-fonts) installed and in use
+- [Patched font](https://github.com/ryanoasis/nerd-fonts) installed and in 
 - [Node](https://nodejs.org/en/) installed (with npm)
-- [Go](https://go.dev/) installed and setup (OPTIONAL)
+- [cpplint](https://github.com/cpplint/cpplint) installed (with pip)
+- [llvm](https://apt.llvm.org/)
 
 ## LSP
-To make language servers work, one should install language servers one wished to use. This configuration uses language servers:
+To make language servers work, one should install language servers one wished to . This configuration uses language servers:
 - [gopls](https://github.com/neovim/nvim-lspconfig/blob/master/doc/server_configurations.md#gopls)
 - [golangci_lint_ls](https://github.com/neovim/nvim-lspconfig/blob/master/doc/server_configurations.md#golangci_lint_ls)
 - [angularls](https://github.com/neovim/nvim-lspconfig/blob/master/doc/server_configurations.md#angularls)
@@ -21,28 +22,50 @@ To make language servers work, one should install language servers one wished to
 - [tsserver](https://github.com/neovim/nvim-lspconfig/blob/master/doc/server_configurations.md#tsserver)
 - [bashls](https://github.com/neovim/nvim-lspconfig/blob/master/doc/server_configurations.md#bashls)
 - [vimls](https://github.com/neovim/nvim-lspconfig/blob/master/doc/server_configurations.md#vimls)
+- [ccls](https://github.com/MaskRay/ccls) Requires additional configuring in project
 
 [Full list](https://github.com/neovim/nvim-lspconfig/blob/master/doc/server_configurations.md) of possible server configurations and their installation instructions.
 
-These are taken into use in the file `lsp/lsp.lua`:
+These are taken into  in the file `lsp/lsp.lua`:
 ```
-local servers = {'gopls', 'golangci_lint_ls', 'angularls', 'cssls', 'html', 'tsserver', 'bashls', 'vimls' }
+local servers = {'angularls', 'cssls', 'html', 'tsserver', 'bashls', 'vimls' }
 ```
-There are two scripts that take care of the language server installation:
-- `lsp_install_npm.sh` --> installs all language servers used that are installed using npm
-- `lsp_install_go.sh` --> installs all language servers used that are installed using go (go language servers)
-
-If you don't want to use for example the Go language servers, just don't install them, but remember to remove the go servers from the servers list mentioned above (`gopls` and `golangci_lint_ls`).
-
->For go language servers: make sure `$GOPATH/bin is in your $PATH`
 
 ## Installation
 Drop the contents of this repo to `~/.config/nvim`
 
-Run `lsp_install_npm.sh` (sudo because npm is ran with `-g` flag) to install all language servers installed via npm.
-
-Run `lsp_install_go.sh` to install go language servers (Go required)
-
-Open neovim and run `:PlugInstall`
-
+```
+nvim -c "autocmd User PackerComplete quitall" -c "PackerSync"
+nvim
+```
 You should be good to go!
+
+## Full list of packages:
+   [wbthomason/packer.nvim]
+   [jackguo380/vim-lsp-cxx-highlight]
+   [vim-syntastic/syntastic]
+   [morhetz/gruvbox]
+   [kyazdani42/nvim-web-devicons]
+   [kyazdani42/nvim-tree.lua]
+   [rhysd/vim-clang-format]
+   [nvim-lua/plenary.nvim]
+   [nvim-treesitter/nvim-treesitter]
+   [nvim-telescope/telescope-fzf-native.nvim]
+   [nvim-telescope/telescope.nvim]
+   [feline-nvim/feline.nvim]
+   [akinsho/bufferline.nvim]
+   [catppuccin/nvim]
+   [neovim/nvim-lspconfig]
+   [hrsh7th/cmp-nvim-lsp]
+   [hrsh7th/cmp-buffer]
+   [hrsh7th/cmp-path]
+   [hrsh7th/cmp-cmdline]
+   [hrsh7th/nvim-cmp]
+   [hrsh7th/cmp-vsnip]
+   [hrsh7th/vim-vsnip]
+   [ray-x/cmp-treesitter]
+   [numToStr/FTerm.nvim]
+   [preservim/nerdcommenter]
+   [f-person/git-blame.nvim]
+   [nvim-lualine/lualine.nvim]
+   [jiangmiao/auto-pairs]

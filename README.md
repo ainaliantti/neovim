@@ -32,40 +32,39 @@ local servers = {'angularls', 'cssls', 'html', 'tsserver', 'bashls', 'vimls' }
 ```
 
 ## Installation
-Drop the contents of this repo to `~/.config/nvim`
-
 ```
+git clone https://github.com/ainaliantti/neovim ~/.config/nvim
 nvim -c "autocmd User PackerComplete quitall" -c "PackerSync"
 nvim
 ```
 You should be good to go!
 
 ## Full list of packages:
--   [wbthomason/packer.nvim]
--   [jackguo380/vim-lsp-cxx-highlight]
--   [vim-syntastic/syntastic]
--   [morhetz/gruvbox]
--   [kyazdani42/nvim-web-devicons]
--   [kyazdani42/nvim-tree.lua]
--   [rhysd/vim-clang-format]
--   [nvim-lua/plenary.nvim]
--   [nvim-treesitter/nvim-treesitter]
--   [nvim-telescope/telescope-fzf-native.nvim]
--   [nvim-telescope/telescope.nvim]
--   [feline-nvim/feline.nvim]
--   [akinsho/bufferline.nvim]
--   [catppuccin/nvim]
--   [neovim/nvim-lspconfig]
--   [hrsh7th/cmp-nvim-lsp]
--   [hrsh7th/cmp-buffer]
--   [hrsh7th/cmp-path]
--   [hrsh7th/cmp-cmdline]
--   [hrsh7th/nvim-cmp]
--   [hrsh7th/cmp-vsnip]
--   [hrsh7th/vim-vsnip]
--   [ray-x/cmp-treesitter]
--   [numToStr/FTerm.nvim]
--   [preservim/nerdcommenter]
--   [f-person/git-blame.nvim]
--   [nvim-lualine/lualine.nvim]
--   [jiangmiao/auto-pairs]
+-   [wbthomason/packer.nvim](https://github.com/wbthomason/packer.nvim)
+-   [jackguo380/vim-lsp-cxx-highlight](https://github.com/jackguo380/vim-lsp-cxx-highlight)
+-   [vim-syntastic/syntastic](https://github.com/vim-syntastic/syntastic)
+-   [morhetz/gruvbox](https://github.com/morhetz/gruvbox)
+-   [kyazdani42/nvim-web-devicons](https://github.com/kyazdani42/nvim-web-devicons)
+-   [kyazdani42/nvim-tree.lua](https://github.com/kyazdani42/nvim-tree.lua)
+-   [rhysd/vim-clang-format](https://github.com/)
+-   [nvim-lua/plenary.nvim](https://github.com/nvim-lua/plenary.nvim)
+-   [nvim-treesitter/nvim-treesitter](https://github.com/nvim-treesitter/nvim-treesitter)
+-   [nvim-telescope/telescope-fzf-native.nvim](https://github.com/nvim-telescope/telescope-fzf-native.nvim)
+-   [nvim-telescope/telescope.nvim](https://github.com/nvim-telescope/telescope.nvim)
+-   [feline-nvim/feline.nvim](https://github.com/feline-nvim/feline.nvim)
+-   [akinsho/bufferline.nvim](https://github.com/akinsho/bufferline.nvim)
+-   [catppuccin/nvim](https://github.com/catppuccin/nvim)
+-   [neovim/nvim-lspconfig](https://github.com/neovim/nvim-lspconfig)
+-   [hrsh7th/cmp-nvim-lsp](https://github.com/hrsh7th/cmp-nvim-lsp)
+-   [hrsh7th/cmp-buffer](https://github.com/hrsh7th/cmp-buffer)
+-   [hrsh7th/cmp-path](https://github.com/hrsh7th/cmp-path)
+-   [hrsh7th/cmp-cmdline](https://github.com/hrsh7th/cmp-cmdline)
+-   [hrsh7th/nvim-cmp](https://github.com/hrsh7th/nvim-cmp)
+-   [hrsh7th/cmp-vsnip](https://github.com/hrsh7th/cmp-vsnip)
+-   [hrsh7th/vim-vsnip](https://github.com/hrsh7th/vim-vsnip)
+-   [ray-x/cmp-treesitter](https://github.com/ray-x/cmp-treesitter)
+-   [numToStr/FTerm.nvim](https://github.com/numToStr/FTerm.nvim)
+-   [preservim/nerdcommenter](https://github.com/preservim/nerdcommenter)
+-   [f-person/git-blame.nvim](https://github.com/f-person/git-blame.nvim)
+-   [nvim-lualine/lualine.nvim](https://github.com/nvim-lualine/lualine.nvim)
+-   [jiangmiao/auto-pairs](https://github.com/jiangmiao/auto-pairs)

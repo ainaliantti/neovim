@@ -4,3 +4,5 @@ let g:syntastic_cpp_cpplint_exec = 'cpplint'
 " The following two lines are optional. Configure it to your liking!
 let g:syntastic_check_on_open = 1
 let g:syntastic_check_on_wq = 0
+let g:syntastic_c_compiler_options="-Wall -Wextra"
+let g:syntastic_cpp_compiler_options="-Wall -Wextra"

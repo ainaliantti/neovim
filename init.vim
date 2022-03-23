@@ -17,6 +17,11 @@ source ~/.config/nvim/configs/telescope/telescope.vim
 source ~/.config/nvim/configs/syntastic/syntastic.vim
 " vim-clang-format, auto formatter 
 source ~/.config/nvim/configs/vim-clang-format/cim-clang-format.vim
+
+source ~/.config/nvim/configs/bufferline.nvim/bufferline.vim
+source ~/.config/nvim/configs/bufferline.nvim/bufferline.lua
+
+source ~/.config/nvim/configs/feline-nvim/feline.lua
 " *******************
 " * Lua source files *
 " *******************

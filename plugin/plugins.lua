@@ -33,4 +33,5 @@ return require('packer').startup(function()
   use 'f-person/git-blame.nvim'
   use 'nvim-lualine/lualine.nvim'
   use 'jiangmiao/auto-pairs'
+  use 'm-pilia/vim-ccls' --vimlsp/ccls integration
 end)

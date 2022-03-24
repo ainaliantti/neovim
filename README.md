@@ -68,3 +68,4 @@ You should be good to go!
 -   [f-person/git-blame.nvim](https://github.com/f-person/git-blame.nvim)
 -   [nvim-lualine/lualine.nvim](https://github.com/nvim-lualine/lualine.nvim)
 -   [jiangmiao/auto-pairs](https://github.com/jiangmiao/auto-pairs)
+-   [m-pilia/vim-ccls](https://github.com/vimlsp/ccls)

@@ -1,5 +1,5 @@
 set relativenumber
-set nohlsearch
+set hlsearch
 set hidden
 set noerrorbells
 set tabstop=4 softtabstop=4
@@ -25,4 +25,3 @@ set colorcolumn=120
 set cursorline
 set autoread
 set formatoptions-=cro
-set splitright

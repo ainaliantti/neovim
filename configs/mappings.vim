@@ -1,9 +1,6 @@
 " Leaer
 let mapleader=" "
 
-" Esc to jj
-imap jj <Esc>
-
 " Keep visual mode after indenting with < and >
 vmap < <gv
 vmap > >gv
@@ -52,3 +49,4 @@ inoremap <C-j> :m .+1<CR>==
 inoremap <C-k> :m .-2<CR>==
 nnoremap <leader>k :m .-2<CR>==
 nnoremap <leader>j :m .+1<CR>==
+nnoremap <C-w>b :sbuffer 

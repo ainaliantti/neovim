@@ -2,7 +2,7 @@
 " * Vim source files *
 " ********************
 " Plugins
-source ~/.config/nvim/plugin/plugins.lua
+luafile ~/.config/nvim/plugin/plugins.lua
 " Mappings
 source ~/.config/nvim/configs/mappings.vim
 " General settings
@@ -19,9 +19,9 @@ source ~/.config/nvim/configs/syntastic/syntastic.vim
 source ~/.config/nvim/configs/vim-clang-format/cim-clang-format.vim
 
 source ~/.config/nvim/configs/bufferline.nvim/bufferline.vim
-source ~/.config/nvim/configs/bufferline.nvim/bufferline.lua
+luafile ~/.config/nvim/configs/bufferline.nvim/bufferline.lua
 
-source ~/.config/nvim/configs/feline-nvim/feline.lua
+luafile ~/.config/nvim/configs/feline-nvim/feline.lua
 " *******************
 " * Lua source files *
 " *******************
@@ -29,18 +29,22 @@ source ~/.config/nvim/configs/feline-nvim/feline.lua
 " instructions written inside the files
 " LSP
 luafile ~/.config/nvim/configs/lsp/lsp.lua
+source ~/.config/nvim/configs/lsp/lsp.vim
 " CMP configuration
 luafile ~/.config/nvim/configs/cmp/cmp.lua
 " Treesitter
 luafile ~/.config/nvim/configs/treesitter/treesitter.lua
 " Luatree
-source ~/.config/nvim/configs/luatree/luatree.lua
+luafile ~/.config/nvim/configs/luatree/luatree.lua
 " FTerm
-source ~/.config/nvim/configs/FTerm/fterm.lua
+luafile ~/.config/nvim/configs/FTerm/fterm.lua
 " Telescope
-source ~/.config/nvim/configs/telescope/telescope.lua
+luafile ~/.config/nvim/configs/telescope/telescope.lua
 " Lualine
-source ~/.config/nvim/configs/lualine/lualine.lua
+luafile ~/.config/nvim/configs/lualine/lualine.lua
+" Session.nvim
+luafile ~/.config/nvim/configs/session.nvim/session.lua
+source ~/.config/nvim/configs/session.nvim/session.vim
 
 " *********
 " * Other *
